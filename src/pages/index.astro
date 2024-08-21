@@ -8,7 +8,9 @@ import Layout from '@/layouts/Layout.astro';
 		<div class="py-8 px-4 text-center lg:py-16 lg:px-6 text-black">
 			<h2>La boda del año Luis Alfredo y Yael Arai</h2>
 		</div>
-		<Counter />
+		<div class="flex w-full justify-center">
+			<Counter client:only />
+		</div>
 	</main>
 </Layout>
 
