@@ -1,0 +1,14 @@
+---
+const { href, hoverColor } = Astro.props;
+---
+
+<a
+  class={`transition-all duration-300 py-2 px-3  flex justify-center items-center text-center align-middle rounded-lg ${hoverColor}`}
+  href={href}><slot /></a
+>
+
+<style>
+  a:hover {
+    background: #CDBFA2;
+  }
+</style>

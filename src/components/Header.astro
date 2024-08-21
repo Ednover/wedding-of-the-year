@@ -1,0 +1,17 @@
+---
+import HeaderButton from "./HeaderButton.astro"
+import { Colors } from "@/lib/colors"
+
+const bgColor = `bg-[${Colors.primary.normal}]`;
+const hoverColor = `hover:bg-[${Colors.primary.hover}]`;
+---
+
+<header class={`w-full p-2 ${bgColor} text-black`}>
+    <nav class="flex gap-10 w-full justify-center">
+        <HeaderButton href="/" hoverColor={hoverColor}>Home</HeaderButton>
+        <HeaderButton href="" hoverColor={hoverColor}>Our wedding</HeaderButton>
+        <HeaderButton href="/photos" hoverColor={hoverColor}>Photos</HeaderButton>
+        <HeaderButton href="" hoverColor={hoverColor}>Location</HeaderButton>
+        <HeaderButton href="" hoverColor={hoverColor}>Contact</HeaderButton>
+    </nav>
+</header>
