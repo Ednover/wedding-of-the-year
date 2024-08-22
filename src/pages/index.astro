@@ -1,16 +1,13 @@
 ---
 import Counter from '@/components/Counter';
 import Layout from '@/layouts/Layout.astro';
+import Portada from '@/components/Portada.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<div class="py-8 px-4 text-center lg:py-16 lg:px-6 text-black">
-			<h2>La boda del año Luis Alfredo y Yael Arai</h2>
-		</div>
-		<div class="flex w-full justify-center">
-			<Counter client:only />
-		</div>
+	<main class="flex flex-col w-full items-center gap-2">
+		<Portada />
+		<Counter client:only />
 	</main>
 </Layout>
 
